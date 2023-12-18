@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url('https://media3.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif?cid=ecf05e47ki4s11ike7o4zh0ggomumn2c86m5pj0t1xvk8bgm&ep=v1_gifs_related&rid=giphy.gif&ct=g');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    top: 30%;
+    height: 40%;
+    width: 35%;
+    gap: 2rem;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(0, 102, 255, 0.5);
+    padding: 25px;
+    color: rgb(2, 1, 1);
+}
+.container h2 {
+    font-size: 35px;
+}
+.container label{
+    font-size: 23px;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+input {
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding: 0.5rem;
+    font-size: 15px;
+    background-color: rgb(103, 164, 255);
+    color: white;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 30%;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(2, 73, 180);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+button:active {
+    transform: translateY(4px);
+}

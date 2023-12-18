@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Consolas';
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://media4.giphy.com/media/3GclB7VNCzCuY/200.webp?cid=ecf05e47b8aeq73hcig6xtey7bs4k95k1g7dxmmpsbswlova&ep=v1_gifs_search&rid=200.webp&ct=g');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+p {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 60px;
+    height: 150px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(2, 47, 99, 0.5);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    width: auto;
+    position: absolute;
+    padding: 20px;
+    color: black;
+    gap: 1.5rem;
+    top: 20%;
+}
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: white;
+    overflow: hidden;
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 5.3rem);
+    grid-template-rows: repeat(5, 5rem);
+
+}
+button {
+    margin: auto;
+    width: auto;
+    margin: 5%;
+}

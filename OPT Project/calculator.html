@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator </title>
+</head>
+
+<body>
+    <a href="file:///C:/Users/Administrator/Documents/OPT%20Project/profile.html#gallery"><strong>BACK</strong></a>
+    <div class="container">
+        <h1 id="output"></h1>
+        <div class="buttons">
+            <button class="btn c" onclick="c()">C</button>
+            <button class="btn delete" onclick="del()">del</button>
+            <button class="btn printable operation">%</button>
+            <button class="btn printable operation">/</button>
+            <button class="btn printable num">7</button>
+            <button class="btn printable num">8</button>
+            <button class="btn printable num">9</button>
+            <button class="btn printable operation">*</button>
+            <button class="btn printable num">4</button>
+            <button class="btn printable num">5</button>
+            <button class="btn printable num">6</button>
+            <button class="btn printable operation">-</button>
+            <button class="btn printable num">1</button>
+            <button class="btn printable num">2</button>
+            <button class="btn printable num">3</button>
+            <button class="btn printable operation">+</button>
+            <button class="btn printable num">00</button>
+            <button class="btn printable num">0</button>
+            <button class="btn printable num">.</button>
+            <button class="btn" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+
+    <script>
+        const screen = document.getElementById("output")
+        const buttonsP = document.querySelectorAll(".printable")
+
+        buttonsP.forEach(btn => {
+            btn.addEventListener("click", () => printText(btn.innerText))
+        })
+        function printText(data) {
+            screen.innerText += data
+        }
+        function calculate() {
+            screen.innerText = eval(screen.innerText)
+        }
+        function del() {
+            screen.innerText = screen.innerText.slice(0, -1)
+        }
+        function c() {
+            screen.innerText = ""
+        }
+    </script>
+</body>
+</html>
